@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# AltenShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Altenshop is an application that not only displays a list of products, 
+but also lets you sort or filter them, or add, modify and delete products.
 
-Currently, two official plugins are available:
+## Technologies
+React.JS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+### Prerequisites
+* npm 10.7.0
+* node 20.15.0
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Setup
+To run this project, install it locally using npm:
 ```
+$ npm install
+$ npm run dev
+```
+Then go to your localhost:4200
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## The different pages
+
+* "/ " : homepage
+* "/products" : which lists products in read-only mode, just like in an online store.
+    It can be accessible at this address: http://localhost:4200/products
+
+* "/products-admin" : which lists products and allows them to be managed (added, deleted, modified).
+    It can be accessible at this address: http://localhost:4200/admin/products
