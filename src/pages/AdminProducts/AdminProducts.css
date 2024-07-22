@@ -1,0 +1,39 @@
+.page {
+    width: 80%;
+    background-color: #e5e5e5;
+
+    .page-content {
+        padding: 10px;
+    }
+
+    .buttons-container {
+        background-color: white;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .btn {
+            margin: 10px;
+        }
+    }
+
+    .table {
+        border: 1px solid #e5e5e5;
+
+        .icon {
+            cursor: pointer;
+            font-size: 12px;
+            margin: 0 20px;
+
+            &.bi-pencil {
+                color: blue;
+            }
+
+            &.bi-trash {
+                color: red;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.container {
+    width: 20%;
+
+    .row {
+        height: 100%;
+    }
+
+    .col-12 {
+        background-color: #283747;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    i {
+        margin-right: 10px;
+        &.bi-shop {
+            color: crimson
+        }
+    }
+
+
+    .nav-item {
+        width: 100%;
+        padding-left: 20px;
+        height: 60px;
+        line-height: 50px;
+        border-right: 4px solid transparent;
+
+        
+        &.active {
+            background-color: #1b2631;
+            border-color: blue;
+        }
+    }
+
+    a,
+    a:hover {
+        color: white;
+    }
+}
